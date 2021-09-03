@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "porfolios",
+  "info": {
+    "name": "porfolio",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "porfolio_img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "brief_introduction": {
+      "type": "text"
+    },
+    "warning": {
+      "type": "string"
+    }
+  }
+}

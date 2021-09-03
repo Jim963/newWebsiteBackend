@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_detail_details",
+  "info": {
+    "name": "Detail",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "img_url": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "describe": {
+      "type": "text"
+    },
+    "title": {
+      "type": "string"
+    },
+    "motivation": {
+      "type": "text"
+    },
+    "warning": {
+      "type": "string"
+    }
+  }
+}
